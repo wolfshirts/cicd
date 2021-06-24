@@ -13,7 +13,11 @@ jobs:
       - node/install:
           install-yarn: true
       - run: node --version
+  yell-at-stdout:
+    steps:
+      - run: tail /dev/random
 workflows:
   test_my_app:
     jobs:
       - install-node-example
+      - yell-at-stdout
