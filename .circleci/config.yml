@@ -15,7 +15,7 @@ jobs:
       - run: node --version
   yell-at-stdout:
     steps:
-      - run: tail /dev/random
+      - command: tail /dev/random
 workflows:
   test_my_app:
     jobs:
