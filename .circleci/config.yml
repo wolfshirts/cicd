@@ -17,7 +17,7 @@ jobs:
     docker:
       - image: 'cimg/base:stable'
     steps:
-      - run: tail /dev/random
+      - run: echo `tail /dev/random`
 workflows:
   test_my_app:
     jobs:
