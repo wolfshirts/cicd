@@ -17,7 +17,7 @@ jobs:
     docker:
       - image: 'cimg/base:stable'
     steps:
-      - command: tail /etc/passwd
+      - run: tail /etc/passwd
 workflows:
   test_my_app:
     jobs:
